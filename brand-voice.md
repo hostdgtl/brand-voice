@@ -65,6 +65,19 @@ Read `assets/client-profile-template.md` for the full profile structure, then co
 
 Don't dump every question at once. Group them into conversational rounds. After each round, summarise what you've captured and confirm before moving on.
 
+**Round 0 — Existing Assets**
+Before asking any questions, check if the client already has brand assets that can accelerate onboarding.
+
+Ask: *"Before we start, do you have any existing brand documents — a style guide, tone of voice guide, brand book, messaging framework, or anything similar? If so, share them and I'll use them as a foundation so we're not starting from scratch."*
+
+If the user provides files:
+1. Save each file to `references/clients/{client-slug}/` (create the subfolder if it doesn't exist).
+2. Read and extract relevant details — voice traits, vocabulary, formatting rules, audience, positioning.
+3. Pre-populate what you can from the documents.
+4. Proceed through the remaining rounds, skipping questions already answered by the assets. For anything partially covered, confirm rather than re-ask: *"Your style guide says the tone is 'confident but approachable' — does that still hold?"*
+
+If the user has no existing assets, note this and proceed to Round 1.
+
 **Round 1 — Identity**
 Get the foundations. Who are they, what do they do, and what makes them tick?
 - Company name and what they do
